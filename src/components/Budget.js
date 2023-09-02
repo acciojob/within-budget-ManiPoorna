@@ -14,8 +14,14 @@ const Budget = () => {
             setPrice(e.target.value)
             console.log(e.target.value)
         }} />
-        <h4>Items you can buy are in Green color</h4>
         <table>
+            <thead>
+                <th>
+                    <td>
+                        Items you can buy are in Green color
+                    </td>
+                </th>
+            </thead>
             <tbody>
                 {
                     items.map((item,index)=>(
@@ -23,7 +29,7 @@ const Budget = () => {
                             <td>{item.item}</td>
                             {
                                 price>item.price ? 
-                                <td style={{color:"green"}}>{item.price}</td> :
+                                <td style={{color:"rgb(0, 128, 0)"}}>{item.price}</td> :
                                 <td style={{color:"red"}}>{item.price}</td>
                             }
                         </tr>
