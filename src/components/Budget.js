@@ -28,9 +28,9 @@ const Budget = () => {
                         <tr key={index}>
                             <td>{item.item}</td>
                             {
-                                price>item.price ? 
-                                <td style={{color:"rgb(0, 128, 0)"}}>{item.price}</td> :
-                                <td style={{color:"rgb(255, 0, 0)"}}>{item.price}</td>
+                                item.price>price ? 
+                                <td style={{color:"rgb(255, 0, 0)"}}>{item.price}</td> :
+                                <td style={{color:"rgb(0, 128, 0)"}}>{item.price}</td> 
                             }
                         </tr>
                     ))
